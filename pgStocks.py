@@ -77,7 +77,7 @@ try:
             beta_series = stock_returns.rolling(window=30).cov(market_returns) / market_returns.rolling(window=30).var()
             ax2.plot(prices_norm.index, beta_series, label=f'{t} Beta', linestyle='dotted', alpha=0.7)
         ax2.set_ylabel('Beta (30-day rolling)', fontsize=12)
-        ax2.legend(loc='upper right')
+        # ax2.legend(loc='lower left')
 
     plt.tight_layout()
     st.pyplot(fig)
