@@ -476,7 +476,7 @@ st.sidebar.header("Configuration")
 tickers_input = st.sidebar.text_area(
     "Edit Tickers (comma-separated)",
     key="tickers_input",
-    height=100,
+    height=110,
     help="""Enter stock tickers separated by commas. Some common indexes
             include the DJIA (^DJI), S&P 500 (^GSPC), Russell 2000 (^RUT),
             and NASDAQ (^IXIC). E.g. ^dji, ^rut, ^ixic, vtsax, fcntx,
